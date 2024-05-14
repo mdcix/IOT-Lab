@@ -1,0 +1,18 @@
+1. Write an Arduino sketch to detect an object(car) in the parking lot using Ultrasonic
+ Sensor and measure the distance to consecutive objects(cars) parked.
+
+2. Using the Light Sensor, monitor the surrounding light density and automatically 
+turn ON/OFF the high Intensity LED’s by taking some Pre defined Threshold Light
+ Intensity Value.
+
+3. To interface Push button/Digital sensor  with Arduino and write a program to ‘turn ON’
+ LED when push button is pressed or at sensor detection.
+
+4. To interface IR sensor with Arduino and write a program to ‘turn ON’ LED when push button 
+is pressed or at sensor detection.
+
+5. To interface DHT11 sensor with Arduino and write a program to print temperature and 
+humidity readings for a given period of time in the console.
+
+6. Using a raindrop sensor detect the raindrop and make the buzzer to buzz each time
+a drop is been detected.

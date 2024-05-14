@@ -1,0 +1,38 @@
+REGISTER  STRUCTURES:
+
+TMOD:  | G | C/T | M1 | M0 | G | C/T | M1 | M0 |
+
+G: GATE (ALWAYS 0)
+C/T: 0--> TIMER ; 1-->COUNTER
+M1,M0 : Mode Bits
+00 - > 13 bit timer
+01 -> 16 bit timer
+10 -> 8 bit auto reload
+11 ->
+
+
+
+TCON:  | TF1 | TR1 | TF0 | TR0 | IE1 | IT1 | IE0 | IT0 |
+
+TF: Timer overflow (1 will be set when timer finishes)
+TR: set 1 to start timer
+IE: 1 will be set when interrupt occurs
+IT: used to set type(1 for edge trigger, 0 for level trigger)
+
+
+IE:     | EA | -- | -- | ES | ET1 | EX1 | ET0 | EX0 |
+
+EA: Enable all
+ES: enable serial interrupt
+ET1: Enable timer 1 interrupt
+EX1: Enable external interrupt 1 (INT1-> P3.3)
+ET0: Enable timer 0 interrupt
+EX0: Enable external interrupt 0 (INT0-> P3.2)
+
+
+
+SCON:    | SM0 | SM1 | SM2 | REN | TB8 | RB8 | TI | RI |
+
+Always set 50h for serial comm
+TI: Transfer interrupt (will be set 1 when transmission complete)
+RI: Receive interrupt(will be set 1 when receiving complete)
